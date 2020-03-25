@@ -1,0 +1,60 @@
+@font-face {
+  src: url("https://fonts.googleapis.com/css?family=Nunito:400,700&display=swap");
+  font-family: 'Nunito', sans-serif;
+}
+
+body {
+  background: #dcf5ff;
+  margin: 0;
+  height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Nunito', sans-serif;
+}
+
+.container .inner {
+  background: #07daa5;
+  padding: 1em;
+  border-radius: 10px;
+  width: 30vw;
+  -webkit-clip-path: circle(10% at 90% 20%);
+          clip-path: circle(10% at 90% 20%);
+  -webkit-transition: all 0.5s cubic-bezier(0.62, -0.42, 1, 1);
+  transition: all 0.5s cubic-bezier(0.62, -0.42, 1, 1);
+  cursor: pointer;
+}
+
+.container .inner span {
+  float: right;
+  color: white;
+  font-weight: bold;
+  position: relative;
+  margin-right: 1.5vw;
+}
+
+.container .inner:hover span {
+  color: rgba(255, 255, 255, 0);
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+
+.container .inner h1 {
+  color: white;
+  margin: 0;
+}
+
+.container .inner p {
+  color: white;
+  font-size: .8rem;
+}
+
+.container:hover .inner {
+  -webkit-clip-path: circle(75%);
+          clip-path: circle(75%);
+  background: #00b6ff;
+}
+/*# sourceMappingURL=main.css.map */
